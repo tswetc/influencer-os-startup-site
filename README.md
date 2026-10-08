@@ -22,7 +22,7 @@ A live browser product (v1.23) with reusable character passports, scene and cons
 
 The original V2 design and selected images have been restored from the same files already publicly shipped with the owner's product. The short creative video samples are copied from that existing public gallery. They are **examples of visual production**, not measured demonstrations that Claude generated those images.
 
-The 11-second interface walkthrough was made by capturing six states of the real, current public interactive demo and editing them together; it is not a video of the paid application or a continuous uncut user session.
+The 11-second interface walkthrough is a continuous time-sampled screen capture from the current public interactive demo: five real UI actions captured over 11.1 seconds at about 9.7 screenshot samples per second. It is not a recording of the licensed private app.
 
 Archived Reels OS screen recordings were inspected as metadata but **not republished**, because they are historical and not certified as current product UI or founder-approved marketing masters.
 

@@ -323,3 +323,11 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
  .media-proof-grid{gap:24px}
  .media-proof-grid video{max-height:340px}
 }
+
+
+/* Continuous, first-party browser recording: readable at reviewer scale */
+.media-proof-grid{grid-template-columns:minmax(0,1fr);max-width:1100px;gap:26px}
+.media-proof-grid figure:nth-child(2){order:-1}
+.media-proof-grid figure:first-child{width:min(100%,820px)}
+.media-proof-grid video{width:100%;height:auto;aspect-ratio:1280 / 710;object-fit:contain;background:#090909}
+@media(max-width:820px){.media-proof-grid{grid-template-columns:1fr;gap:22px}.media-proof-grid figure:first-child{width:100%}.media-proof-grid video{max-height:none}}
