@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="WARDROBE STUDY">
+<rect width="1200" height="900" fill="#e9e7e2"/>
+<path d="M60 60H1140V840H60Z" fill="none" stroke="#989892" stroke-width="1"/>
+<path d="M60 300H1140M60 600H1140M400 60V840M800 60V840" stroke="#c4c3bd" stroke-width="1"/>
+<circle cx="600" cy="412" r="165" fill="none" stroke="#444444" stroke-width="2"/>
+<path d="M412 670C412 567 788 567 788 670" fill="none" stroke="#444444" stroke-width="2"/>
+<path d="M105 104H165M135 74V134M1035 104H1095M1065 74V134M105 798H165M135 768V828M1035 798H1095M1065 768V828" stroke="#444444" stroke-width="1"/>
+<text x="600" y="846" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#555555" letter-spacing="3">IOS / DEMO VISUAL</text>
+</svg>

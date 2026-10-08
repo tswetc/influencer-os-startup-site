@@ -1,0 +1,1 @@
+Applicant-ready V2 edition. The original site is unchanged. Original character photos are intentionally excluded pending publication-rights review. Hero uses a first-party app screenshot; diagrams are conceptual. Anthropic BYOK support is actual functionality, whereas managed Claude support is planned. No formal Anthropic partnership is claimed.
