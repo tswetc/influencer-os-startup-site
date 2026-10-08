@@ -27,3 +27,7 @@ The primary website video is a 40.96-second silent editorial selection from a re
 Archived Reels OS screen recordings were inspected as metadata but **not republished**, because they are historical and not certified as current product UI or founder-approved marketing masters.
 
 This is an independent startup. The public site does not claim Anthropic endorsement or a partnership. Original repos and private character sources were not modified.
+
+
+## Stage 08 bilingual real-product film integration (unpublished candidate)
+The \`#product-proof\` section now displays two different real application film lengths: a 22.5-second 16:9 EN/RU overview with editorial stage headings, followed by a 39.5-second near-native UI walkthrough with source limitations. It is distinct from the public no-login \`#console\` simplified demo, and from illustrative model/character gallery media. Both are silent archival footage of the paid v1.23 interface, not Claude API proof. Assets are copied unmodified from the verified Stage07 exports; the older publicly posted 40.96-second archive remains in the media folder for historical continuity, but has no active HTML reference in this version. Stage08 is an isolated candidate, not a deployment.

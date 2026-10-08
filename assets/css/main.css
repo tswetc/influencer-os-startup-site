@@ -346,3 +346,176 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .secondary-product-proof{margin-top:32px;max-width:920px}
 .secondary-product-proof img{width:100%;height:auto;display:block}
 @media(max-width:780px){.paid-app-proof-grid{grid-template-columns:1fr}.paid-app-player{max-width:100%}.paid-app-summary h3{font-size:26px}.secondary-product-proof{margin-top:30px}}
+
+
+/* ================================================================
+   STAGE 06: applicant dossier visual refinement
+   Scope: copied candidate only. Original V2 and live site untouched.
+   Rhythm: 12-col desktop / flexible tablet / 2-col mobile image editorials.
+   ================================================================ */
+:root {
+  --page-gutter:clamp(20px,4vw,64px);
+  --section-space:clamp(56px,6.6vw,108px);
+}
+html { scroll-padding-top:calc(var(--head-h) + 14px); }
+body { text-rendering:optimizeLegibility; }
+.wrap,.head-in { max-width:1540px; }
+.wrap { padding-inline:var(--page-gutter); }
+.head-in { padding-inline:var(--page-gutter); }
+section.folio { padding-block:var(--section-space); }
+.hero .hero-grid {
+  grid-template-columns:minmax(0,1.3fr) minmax(0,.87fr);
+  align-items:center;
+  column-gap:clamp(40px,5.2vw,94px);
+  padding-block:clamp(48px,5.5vw,88px);
+}
+.hero-left { min-width:0; gap:clamp(18px,2.2vw,32px); }
+.hero .h1 { font-size:clamp(48px,6.25vw,100px); line-height:1.005; letter-spacing:-.043em; }
+.hero .h1 .indent { margin-left:clamp(22px,5.4vw,90px); }
+.hero .lead { max-width:57ch; font-size:clamp(16px,1.35vw,18px); line-height:1.62; }
+.hero .kicker,.hero .trust { letter-spacing:.08em; }
+.startup-hero-photo { width:100%;min-width:0;margin:0;box-shadow:0 6px 32px rgba(0,0,0,.035); }
+.startup-hero-photo .passport-img {
+  width:100%;height:auto;aspect-ratio:4 / 4.2;object-fit:cover;
+  object-position:center 36%;padding:0;
+}
+.startup-hero-photo .exhibit-head {min-height:47px}
+.startup-hero-photo .proof-caption {min-height:44px;padding:12px 15px;}
+.btn-solid,.btn-ghost,.buy {transition:background-color .16s ease,color .16s ease,border-color .16s ease}
+.btn-solid:focus-visible,.btn-ghost:focus-visible {outline:2px solid currentColor;outline-offset:4px}
+.folio-head { align-items:start; row-gap:16px; }
+.folio-title {text-wrap:balance; max-width:23ch;}
+.site-prose {max-width:74ch;}
+.boundary-a {max-width:50ch;}
+.facts {gap:clamp(18px,2.4vw,32px);}
+.facts article {padding:22px 6px 8px;min-width:0;}
+.facts b {font-size:clamp(20px,2vw,26px);letter-spacing:-.02em}
+.facts span {font-size:11px;max-width:36ch;}
+.pipes {padding:22px;border:1px solid var(--hair);background:var(--bg-2);}
+.pipes p {overflow-wrap:anywhere;line-height:1.75;}
+/* Reassuring product evidence is the lead visual, not a website screenshot */
+.folio-media {background:#141414;color:#f6f6f3;}
+.folio-media .folio-title{max-width:28ch;}
+.folio-media .site-prose{color:#d0d0cd;opacity:1;max-width:76ch;}
+.paid-app-proof-grid {
+  display:grid;grid-template-columns:minmax(0,540px) minmax(0,1fr);
+  max-width:1250px;gap:clamp(32px,5.7vw,88px);
+  align-items:center;margin:40px 0 12px;
+}
+.paid-app-player {max-width:540px;width:100%}
+.paid-app-player video {width:100%;height:auto;aspect-ratio:840 / 1080;object-fit:contain;border-color:#464646;background:#0b0b0b}
+.paid-app-summary {max-width:570px;min-width:0}
+.paid-app-summary h3 {font-size:clamp(31px,3.2vw,44px);max-width:14ch;letter-spacing:-.035em}
+.paid-app-summary .mono.m {color:#a6a6a2}
+.proof-steps li{padding:16px 0;font-size:15px}
+.proof-steps li span{font-size:10.5px}
+.paid-app-summary .startup-disclaimer {max-width:60ch;color:#b3b3af!important;font-size:11px;line-height:1.75}
+.paid-app-summary .btn-ghost {display:inline-flex;align-items:center;justify-content:center;min-height:44px;color:#f6f6f3;border-color:#777}
+.paid-app-summary .btn-ghost:hover {background:#30302e;border-color:#ccc}
+.media-proof-cap {letter-spacing:.04em;line-height:1.6}
+.visuals-gallery {gap:clamp(12px,1.6vw,24px)}
+.visuals-gallery figure {min-width:0}
+.visuals-gallery img {height:auto;aspect-ratio:4/4.2;object-fit:cover;background:var(--bg-2)}
+.visuals-gallery figcaption,.reels-showcase figcaption{border-top:1px solid var(--hair-soft);margin-top:9px;padding-top:12px;}
+.reels-showcase {gap:clamp(16px,2.2vw,32px)}
+.reels-showcase video {border:1px solid var(--hair);background:#111}
+.startup-steps {gap:clamp(14px,2vw,28px)}
+.startup-step {padding:20px 0;min-width:0}
+.startup-step b {font-size:clamp(19px,1.9vw,24px)}
+/* The original four-column system grid had conflicting 3n and 4n borders */
+@media(min-width:1080px) {
+ .sys-grid .sys-block:nth-child(3n){border-right:1px solid var(--hair-soft)}
+ .sys-grid .sys-block:nth-child(4n){border-right:none}
+}
+/* Keep content immediately visible, including static audit screenshots.
+   Interaction animation is not worth delaying the applicant evidence. */
+html.js .rv, html.js .rv.on{opacity:1!important;transform:none!important;transition:none!important}
+@media(max-width:1080px){
+ .hero .hero-grid {grid-template-columns:minmax(0,1fr);padding-block:clamp(38px,6vw,70px);gap:34px;align-items:start}
+ .startup-hero-photo {max-width:650px}
+ .hero .h1 {max-width:950px}
+}
+@media(max-width:960px){
+ .folio-head {grid-template-columns:1fr;gap:14px;}
+ .folio-title {max-width:28ch;}
+ .paid-app-proof-grid {grid-template-columns:minmax(0,1fr);gap:28px;max-width:720px}
+ .paid-app-player{max-width:580px}
+ .paid-app-summary{max-width:680px}
+ .paid-app-summary h3{max-width:none}
+ .sys-grid .sys-block{border-right:none}
+}
+@media(max-width:680px){
+ :root{--page-gutter:20px;--section-space:clamp(48px,11vw,70px)}
+ .hero .hero-grid {gap:25px;padding-block:27px 47px;}
+ .startup-hero-photo {order:-1;width:100%;max-width:100%}
+ .startup-hero-photo .passport-img {
+   width:100%;height:auto;max-height:none;
+   aspect-ratio:16/8.5;object-fit:cover;object-position:50% 32%;
+ }
+ .startup-hero-photo .exhibit-head {min-height:38px}
+ .startup-hero-photo .proof-caption {min-height:0;padding:8px 12px;font-size:9px;line-height:1.5}
+ .hero .h1 {font-size:clamp(42px,11.4vw,64px);line-height:1.03;letter-spacing:-.042em}
+ .hero .h1 .indent {margin-left:clamp(13px,5vw,32px)}
+ .hero .lead {font-size:16px;line-height:1.6}
+ .hero .cta-row {gap:9px}
+ .hero .cta-row a {padding:13px 15px;font-size:13px;min-height:44px}
+ .hero .trust {font-size:9.5px;letter-spacing:.04em;line-height:1.6}
+ .folio-title {font-size:clamp(30px,8vw,40px);line-height:1.07}
+ .folio-no{font-size:10px}
+ .facts article{padding:15px 0}
+ .facts b{font-size:22px}
+ .pipes{padding:15px}
+ .case-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .case-frame img {aspect-ratio:4/5;object-fit:cover}
+ .case-cap {padding:8px;gap:4px}
+ .case-cap .t {font-size:11px}
+ .case-cap .s {font-size:9px;white-space:normal}
+ .paid-app-proof-grid{margin-top:26px;gap:22px}
+ .paid-app-player{max-width:100%}
+ .paid-app-summary h3{font-size:clamp(29px,7vw,36px);max-width:20ch}
+ .proof-steps li{font-size:14px;padding:12px 0}
+ .visuals-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .visuals-gallery figure:first-child{grid-column:1/-1}
+ .visuals-gallery figure:first-child img{aspect-ratio:16/11}
+ .visuals-gallery img{aspect-ratio:4/5;max-height:none;height:auto}
+ .visuals-gallery figcaption{font-size:9.5px;letter-spacing:0}
+ .reels-showcase{grid-template-columns:minmax(0,1fr)}
+ .reels-showcase video{height:auto;max-height:620px;object-fit:contain}
+ .foot-disc{font-size:10px;line-height:1.7;letter-spacing:.015em}
+}
+@media(max-width:375px){
+ .hero .h1 {font-size:42px}
+ .hero .cta-row a {width:100%;text-align:center}
+ .hero .kicker {font-size:9.5px}
+}
+@media(prefers-reduced-motion:reduce){
+ .btn-solid,.btn-ghost,.buy{transition:none}
+}
+
+
+/* <= 375px: the Claude header shortcut is duplicated in the page hero.
+   Hide that shortcut rather than making header/navigation scroll sideways. */
+@media(max-width:375px){
+ .site-head .buy{display:none}
+ .head-in{gap:8px}
+ .sheet-btn{margin-left:auto}
+}
+
+
+/* Stage08 evidence films: 16:9 annotated tour, then portrait-format app walkthrough */
+.product-film-overview{display:grid;grid-template-columns:minmax(0,.32fr) minmax(0,.68fr);gap:clamp(22px,4vw,56px);align-items:center;margin:34px 0 34px;border-top:1px solid #454545;padding:30px 0 32px;border-bottom:1px solid #454545;}
+.product-film-heading{align-self:center;min-width:0;}
+.product-film-heading .mono,.product-film-detail-head .mono{font:500 11px/1.4 'IBM Plex Mono',monospace;color:#aaa;letter-spacing:.06em}
+.product-film-heading h3,.product-film-detail-head h3{font-size:clamp(23px,2.9vw,37px);font-weight:600;letter-spacing:-.035em;line-height:1.12;color:#f4f4f1;text-wrap:balance;margin:12px 0 12px;}
+.product-film-heading p:last-child{font-size:13px;line-height:1.6;color:#c8c9c5;}
+.product-film-trailer{margin:0;min-width:0;max-width:100%;}
+.product-film-trailer video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#060709;border:1px solid #414548;object-fit:contain;}
+.product-film-trailer figcaption{max-width:100%;overflow-wrap:anywhere;}
+.product-film-detail-head{margin:0 0 26px;max-width:80ch;}
+.product-film-detail-head h3{margin:9px 0 0;}
+.folio-media .paid-app-proof-grid{margin-top:0;}
+.folio-media .paid-app-player video{aspect-ratio:4/5;}
+.folio-media video:focus-visible{outline:3px solid #83b1fb;outline-offset:4px;}
+@media(max-width:950px){.product-film-overview{grid-template-columns:1fr;gap:18px;padding:24px 0 30px}.product-film-trailer{max-width:760px}.product-film-heading h3{max-width:35ch;}}
+@media(max-width:680px){.product-film-overview{margin:22px 0 30px;padding:24px 0 25px}.product-film-heading h3,.product-film-detail-head h3{font-size:clamp(24px,6.9vw,31px)}.product-film-detail-head{margin-bottom:18px}.product-film-heading p:last-child{font-size:12px}.product-film-trailer figcaption{font-size:10px;}}
+@media(prefers-reduced-motion:reduce){.product-film-overview,.product-film-trailer video{scroll-behavior:auto;}}
